@@ -1,0 +1,19 @@
+<h2>Admin Dashboard</h2>
+<table border="1">
+  <tr>
+    <th>Date</th><th>Equipment</th><th>Fault</th><th>Status</th><th>OEM</th><th>Remarks</th>
+  </tr>
+  <% faults.forEach(f => { %>
+    <tr>
+      <td><%= f.dateOfFault %></td>
+      <td><%= f.equipmentName %></td>
+      <td><%= f.natureOfFault %></td>
+      <td><%= f.status %></td>
+      <td><%= f.escalatedToOEM %></td>
+      <td><%= f.remarks %></td>
+    </tr>
+  <% }) %>
+</table>
+
+
+

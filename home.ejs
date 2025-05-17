@@ -1,0 +1,11 @@
+<h2>Welcome <%= user.username %>!</h2>
+
+<% if (user.role === 'admin') { %>
+  <a href="/admin/dashboard">Go to Admin Dashboard</a>
+<% } else { %>
+  <a href="/user/fault">Submit a Fault Report</a>
+<% } %>
+
+
+
+

@@ -1,0 +1,13 @@
+<h2>Report a Problem</h2>
+<form method="POST" action="/user/fault">
+  <input type="date" name="dateOfFault" required><br>
+  <input type="text" name="equipmentName" placeholder="Equipment Name" required><br>
+  <input type="text" name="natureOfFault" placeholder="Nature of Fault" required><br>
+  <select name="status">
+    <option>Rectified</option>
+    <option>Not Rectified</option>
+  </select><br>
+  <input type="text" name="escalatedToOEM" placeholder="Escalated to OEM"><br>
+  <textarea name="remarks" placeholder="Remarks"></textarea><br>
+  <button type="submit">Submit</button>
+</form>
